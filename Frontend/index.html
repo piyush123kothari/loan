@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoanIQ - Loan Prediction</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <h1>Predict Loan Status</h1>
+    </div>
+
+    <div class="form-grid">
+
+        <div class="input-group">
+            <label>Dependents</label>
+            <input type="number" id="no_of_dependents" placeholder="Dependents">
+        </div>
+
+        <div class="input-group">
+            <label>Education</label>
+            <select id="education">
+                <option>Graduate</option>
+                <option>Not Graduate</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label>Self Employed</label>
+            <select id="self_employed">
+                <option>Yes</option>
+                <option>No</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label>Annual Income</label>
+            <input type="number" id="income_annum" placeholder="Annual Income">
+        </div>
+
+        <div class="input-group">
+            <label>Loan Amount</label>
+            <input type="number" id="loan_amount" placeholder="Loan Amount">
+        </div>
+
+        <div class="input-group">
+            <label>Loan Term</label>
+            <input type="number" id="loan_term" placeholder="Loan Term">
+        </div>
+
+        <div class="input-group">
+            <label>CIBIL Score</label>
+            <input type="number" id="cibil_score" placeholder="CIBIL Score">
+        </div>
+
+        <div class="input-group">
+            <label>Residential Assets</label>
+            <input type="number" id="residential_assets_value" placeholder="Residential Assets">
+        </div>
+
+        <div class="input-group">
+            <label>Commercial Assets</label>
+            <input type="number" id="commercial_assets_value" placeholder="Commercial Assets">
+        </div>
+
+        <div class="input-group">
+            <label>Luxury Assets</label>
+            <input type="number" id="luxury_assets_value" placeholder="Luxury Assets">
+        </div>
+
+        <div class="input-group">
+            <label>Bank Assets</label>
+            <input type="number" id="bank_asset_value" placeholder="Bank Assets">
+        </div>
+
+        <div class="input-group">
+            <label>Exam Qualified</label>
+            <select id="exam_qualified">
+                <option>Yes</option>
+                <option>No</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label>Admission Type</label>
+            <select id="admission_type">
+                <option>Merit</option>
+                <option>Management</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label>Select Model</label>
+            <select id="model_name">
+                <option>Logistic Regression</option>
+                <option>Random Forest</option>
+                <option>Gradient Boosting</option>
+                <option>Decision Tree</option>
+                <option>XGBoost</option>
+                <option>AdaBoost</option>
+            </select>
+        </div>
+
+    </div>
+
+    <button onclick="predictLoan()">
+        Predict
+    </button>
+
+    <div id="result"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
